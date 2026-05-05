@@ -43,7 +43,7 @@ public class EcomController
             return new ResponseEntity<>(saved, HttpStatus.CREATED);
 
         } catch (Exception e) {
-            e.printStackTrace();
+
             return new ResponseEntity<>(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
